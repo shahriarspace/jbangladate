@@ -7,7 +7,11 @@
 	<name>jBanglaDate</name>
 	<description>Bangla Date Representation in Java</description>
 	<build>
-
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
