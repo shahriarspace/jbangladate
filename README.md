@@ -21,7 +21,7 @@ The result:
 ```
 
 Add Maven Dependecy:
-'''
+```xml
 <project>
 ...................
 	<repositories>
@@ -39,4 +39,4 @@ Add Maven Dependecy:
 	</dependencies>
 ...............
 <project>
-'''
+```
