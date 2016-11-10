@@ -5,8 +5,7 @@ import java.time.Year;
 
 /**
  * 
- * @author Shahriar Robbani Email: mineme.shahriar@gmail.com
- * http://shahriar.io/
+ * @author Shahriar Robbani Email: mineme.shahriar@gmail.com http://shahriar.io/
  */
 
 public class BanglaDate {
@@ -18,6 +17,7 @@ public class BanglaDate {
 	private int bangDate; // generated Bangla Date in English number
 	private String banglaDay; // generated Bangla Date
 	private String banglaMonth; // generated Bangla Month
+	private String banglaMonthValue; // Value of the month
 	private int bangYear; // generated Bangla Year in English number
 	private String banglaYear; // generated Bangla Year
 	private String[] bn_months = { "পৌষ", "মাঘ", "ফাল্গুন", "চৈত্র", "বৈশাখ", "জ্যৈষ্ঠ", "আষাঢ়", "শ্রাবণ", "ভাদ্র",
@@ -60,8 +60,10 @@ public class BanglaDate {
 			this.bangDate += this.bn_month_dates[this.engMonth - 1];
 			if (Year.of(this.engYear).isLeap() && this.lipyearindex == this.engMonth)
 				this.bangDate += 1;
+			this.banglaMonthValue = this.bangla_number(this.engMonth - 1);
 			this.banglaMonth = this.bn_months[this.engMonth - 1];
 		} else {
+			this.banglaMonthValue = this.bangla_number((this.engMonth) % 12);
 			this.banglaMonth = this.bn_months[(this.engMonth) % 12];
 		}
 	}
@@ -95,8 +97,25 @@ public class BanglaDate {
 		return buffer.toString();
 	}
 
+	public String getBanglaDay() {
+		return banglaDay;
+	}
+
+	public String getBanglaMonth() {
+		return banglaMonth;
+	}
+
+	public String getBanglaYear() {
+		return banglaYear;
+	}
+
 	@Override
 	public String toString() {
 		return this.banglaDay + "-" + this.banglaMonth + "-" + this.banglaYear;
 	}
+
+	public String getBanglaMonthValue() {
+		return banglaMonthValue;
+	}
+
 }

@@ -1,20 +1,18 @@
 package io.shahriar.jbangladate;
 
+/**
+ * 
+ * @author Shahriar Robbani Email: mineme.shahriar@gmail.com http://shahriar.io/
+ */
 public class Main {
-
 	public static void main(String[] args) {
 
-
-		
-//		System.out.println(Instant.now().getEpochSecond());
-		
-
-/*		Instant.now();
-		Date date = Date.from(Instant.ofEpochSecond(1478504028));
-		Calendar.getInstance().get(Calendar.DATE);
-		System.out.println(date);*/
-		BanglaDate b = BanglaDate.now();
-		System.out.println(b);
+		BanglaDate banglaDate = BanglaDate.now();
+		System.out.println(banglaDate);
+		System.out.println(banglaDate.getBanglaDay());
+		System.out.println(banglaDate.getBanglaMonth());
+		System.out.println(banglaDate.getBanglaYear());
+		System.out.println(banglaDate.getBanglaMonthValue());
 	}
 
 }
