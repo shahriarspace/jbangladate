@@ -3,6 +3,12 @@ package io.shahriar.jbangladate;
 import java.time.LocalDateTime;
 import java.time.Year;
 
+/**
+ * 
+ * @author Shahriar Robbani Email: mineme.shahriar@gmail.com
+ * http://shahriar.io/
+ */
+
 public class BanglaDate {
 	private int morning = 6; // when the date will change?
 	private int engHour; // Current hour of English Date
