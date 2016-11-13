@@ -26,14 +26,14 @@ Add Maven Dependecy:
 ...................
 	<repositories>
 		<repository>
-			<id>java.net</id>
-			<url>http://maven.shahriar.io/maven/6d00b1f7-2400-462e-9f73-b8d516e5bafc/</url>
+			<id>6d00b1f7-2400-462e-9f73-b8d516e5bafc</id>
+			<url>http://maven.shahriar.io/maven/maven/</url>
 		</repository>
 	</repositories>
 	<dependencies>
 			<dependency>
-			<groupId>io.shahriar.jBanglaDate</groupId>
-			<artifactId>jBanglaDate</artifactId>
+			<groupId>io.shahriar.jbangladate</groupId>
+			<artifactId>jbangladate</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
