@@ -1,5 +1,7 @@
 # jBanglaDate
 
+[![Build Status](http://jenkins.shahriar.io/buildStatus/icon?job=jdk-maven-test)](http://jenkins.shahriar.io/job/jdk-maven-test/)
+
 Example Use:
 ```java
 		BanglaDate banglaDate = BanglaDate.now();
