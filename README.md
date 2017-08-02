@@ -1,6 +1,6 @@
 # jBanglaDate
 
-[![Build Status](http://jenkins.shahriar.io/buildStatus/icon?job=jdk-maven-test)](http://jenkins.shahriar.io/job/jdk-maven-test/)
+[![Build Status](http://jenkins.shahriar.io/buildStatus/icon?job=jbangladate)](http://jenkins.shahriar.io/job/jbangladate/)
 
 Example Use:
 ```java
